@@ -125,7 +125,7 @@ function EliminarPedido(idpedido){
     var datospedido = {
         ID: idpedido
     };
-    var datospedidojson = JSON.stringify(datospedido);
+    var datospedidojson= JSON.stringify(datospedido);
 
     $.ajax({
         url: urldeletepedido,
@@ -136,5 +136,5 @@ function EliminarPedido(idpedido){
             console.log(response);
         }
     });
-    alert("Pedido Eliminado");
+    alert("Pedido  Eliminado");
 }
